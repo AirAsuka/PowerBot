@@ -19,6 +19,7 @@ class DbStruct(MiddleWareBase):
     pool_size: int = 30
     max_overflow: int = 100
 
+
 class Settings(BaseSettings):
     ENV: str = "dev"
 
@@ -34,9 +35,8 @@ class Settings(BaseSettings):
     # DB_MYSQL: DbStruct
     # DB_NAME: str = ""
 
-    BOT_APPID:int
-    BOT_TOKEN:str
-
+    BOT_APPID: int
+    BOT_TOKEN: str
 
     class Config:
         case_sensitive = True
